@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Coordenadas de Ubicación
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button (click)="obtenerPosition()">Obtener Coordenadas</ion-button>
+  
+  <!-- Mostrar las coordenadas dentro de un h1 -->
+  <h1 *ngIf="miUbicacion">
+    Latitud: {{ miUbicacion[0].let }} | Longitud: {{ miUbicacion[0].lng }}
+  </h1>
+</ion-content>
